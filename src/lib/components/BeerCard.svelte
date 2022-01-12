@@ -6,7 +6,7 @@
 
 <div class="card shadow-2xl bg-neutral text-accent-content">
     <figure>
-      <img src="https://picsum.photos/id/1005/400/250">
+      <img class="object-none h-48 w-48" src={beer.image_url}>
     </figure> 
     <div class="card-body">
       <h2 class="card-title">{beer.name}</h2> 

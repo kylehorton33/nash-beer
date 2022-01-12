@@ -1,8 +1,9 @@
 <script context="module">
-	const API_ENDPOINT = process.env['API_ENDPOINT'];
+	// const API_ENDPOINT = process.env['API_ENDPOINT_BEERS'];
+	const API_ENDPOINT = 'https://api.punkapi.com/v2/beers/'
 
 	export async function load({ fetch }) {
-		const res = await fetch(`${API_ENDPOINT}/beer`);
+		const res = await fetch(`${API_ENDPOINT}`);
 		return {
 			props: {
 				loadedBeers: await res.json()
