@@ -12,7 +12,7 @@
       <h2 class="card-title">{beer.name}</h2> 
       <p class="line-clamp">{beer.description}</p> 
       <div class="block md:card-actions">
-        <button class="btn btn-secondary mt-2">More info</button>
+        <a class="btn btn-secondary mt-2" href={`beer/${beer.id}`}>More info</a>
       </div>
     </div>
 </div>
