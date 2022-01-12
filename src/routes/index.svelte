@@ -6,8 +6,8 @@
 				Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
 				quasi. In deleniti eaque aut repudiandae et a id nisi.
 			</p>
-			<button class="btn btn-primary mx-2 w-40">Sign Up</button>
-			<button class="btn btn-secondary mx-2 w-40">Login</button>
+			<a class="btn btn-primary mx-2 w-40" href="/signup">Sign Up</a>
+			<a class="btn btn-secondary mx-2 w-40" href="/login">Login</a>
 		</div>
 	</div>
 </div>
