@@ -12,18 +12,20 @@
 </script>
 
 <script>
-	import BeerCard from "$lib/components/BeerCard.svelte";
+	import BeerCard from '$lib/components/BeerCard.svelte';
 	export let loadedBeers;
 </script>
 
 <div class="hero h-96 bg-base-200">
 	<div class="text-center hero-content">
-		<div class="max-w-md">
+		<div class="">
 			<h1 class="mb-5 text-5xl font-bold">Beer Page</h1>
 			{#if loadedBeers}
-				{#each loadedBeers as beer}
-					<BeerCard {beer} />
-				{/each}
+				<div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+					{#each loadedBeers as beer}
+						<BeerCard {beer} />
+					{/each}
+				</div>
 			{:else}
 				<p class="mb-5">Out of beer...</p>
 			{/if}
