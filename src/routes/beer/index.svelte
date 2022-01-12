@@ -12,6 +12,7 @@
 </script>
 
 <script>
+	import BeerCard from "$lib/components/BeerCard.svelte";
 	export let loadedBeers;
 </script>
 
@@ -21,7 +22,7 @@
 			<h1 class="mb-5 text-5xl font-bold">Beer Page</h1>
 			{#if loadedBeers}
 				{#each loadedBeers as beer}
-					<p>{beer.name}</p>
+					<BeerCard {beer} />
 				{/each}
 			{:else}
 				<p class="mb-5">Out of beer...</p>
