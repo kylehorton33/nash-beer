@@ -46,6 +46,7 @@
 						type="password"
 					/>
 					<div class="login-placeholder h-20" />
+					<div class="login-placeholder h-1" />
 				</div>
 
 				<div class="justify-end card-actions mt-7">
